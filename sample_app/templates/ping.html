@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block script %}
+<script>
+    $(document).ready(function(){
+        //$('#get_one').get_one("channel-A");
+        $('#get_stream').get_stream("channel-B");
+    })
+</script>
+{% endblock script %}
+
+{% block container %}
+    <h3>get_one Test</h3>
+    <div id='get_one'>get_one div</div>
+
+
+    <h3>get_stream Test</h3>
+    <div id='get_stream'>get_stream div</div>
+
+{% endblock container %}
